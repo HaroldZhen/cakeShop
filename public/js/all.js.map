@@ -1,1 +1,0 @@
-{"version":3,"sources":["all.js"],"names":["require","vendorJs"],"mappings":";;eAAqBA,OAAO,CAAC,aAAD,C;IAApBC,Q,YAAAA,Q","file":"all.js","sourcesContent":["const { vendorJs } = require('./vendor.js');\n"]}

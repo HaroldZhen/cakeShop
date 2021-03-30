@@ -26,9 +26,9 @@ gulp.task('copyHTML', () => {
         .pipe(
             htmlreplace({
                 dev_css: '', // 針對 dev_css 塊做替換
-                prod_css: 'css/all.css', // 針對 prod_css 塊做替換
+                prod_css: ['css/all.css', 'css/index.css'], // 針對 prod_css 塊做替換
                 dev_js: '', // 針對 dev_js 塊做替換
-                prod_js: 'js/all.js', // 針對 prod_js 塊做替換
+                prod_js: ['js/all.js','js/vendor.js'], // 針對 prod_js 塊做替換
             })
         )
         .pipe($.if(options.env === 'prod', $.htmlmin({ collapseWhitespace: true })))//壓縮 HTML

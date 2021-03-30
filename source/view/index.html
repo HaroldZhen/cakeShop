@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="../../public/css/all.css" />
     <link rel="stylesheet" href="../../public/css/index.css" />
     <!-- endbuild -->
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/963fe90d28.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -180,16 +178,51 @@
     <section class="py-5 bg-hex">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="../img/logo-light.svg" width="40" height="40" alt="">
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                    <img class="mr-3" src="../img/logo-light.svg" width="40" height="40" alt="">
+                    <span class="text-white h4">訂閱你我的甜蜜郵件</span>
                 </div>
-                <div class="col-md-6">
-                    <label class="bg-primary-lighter h-100" for=""><i class="fas fa-envelope"></i></label>
-                    <input type="text" class="btn btn-primary-light btn-lg" value="123">
+                <div class="col-md-5">
+                    <div class="bg-primary-lighter form-square text-hex d-flex justify-content-between">
+                        <label class="h-100 form-square-icon-left" for=""><i class="fas fa-envelope fa-lg "></i></label>
+                        <input type="text" class="btn btn-primary-light btn-lg py-3 w-100 text-left rounded-0" value="" placeholder="請輸入Email">
+                        <button class="btn btn-egg btn-lg rounded-0"><i class="fas fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
       </section>
+      <footer class="py-4 bg-primary-lighter text-hex">
+          <div class="container">
+
+              <div class="row justify-content-center">
+                  <div class="col-md-5 d-flex flex-column justify-content-between">
+                      <div>
+                          <img src="../img/logotype-sm-dark.svg" height="27" alt="">
+                      </div>
+                      <ul class="list-unstyled mt-5">
+                        <li>07-1234-5678</li>
+                        <li>sweetaste@email.com</li>
+                        <li>800 高雄市新興區幸福路 520 號</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-5 text-right d-md-block">
+                      <div>
+                          <img src="../img/sm-今天是個吃甜點的好日子.svg" width="60" alt="">
+                      </div>
+                  </div>
+              </div>
+              <div class="row justify-content-center mt-4">
+                  <div class="col-md-5 mt-2">
+                      <img src="../img/ic-facebook.svg" width="32" height="32" alt="">
+                      <img src="../img/ic-line@.svg" width="32" height="32" alt="">
+                  </div>
+                  <div class="col-md-5 text-right mt-2">
+                      <span>© 2018 Sweetaste* All Rights Reserved</span>
+                  </div>
+              </div>
+          </div>
+      </footer>
 
 
     <!-- build:dev_js -->
@@ -197,6 +230,9 @@
     <!-- endbuild -->
     <!-- build:prod_js -->
     <!-- endbuild -->
+    
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/963fe90d28.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -169,3 +169,12 @@
         }
     }
 }
+.form-square{
+    position: relative;
+    padding-left: 60px;
+    .form-square-icon-left{
+        position: absolute;
+        left: 25px;
+        top: 20px;
+    }
+}

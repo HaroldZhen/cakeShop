@@ -44,7 +44,7 @@ gulp.task('vendorJs', function () {
       './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
     ])
     .pipe($.concat('vendor.js'))
-    .pipe(gulp.dest('./source/js'))
+    .pipe(gulp.dest('./public/js'))
 })
 
 gulp.task('scss', function () {

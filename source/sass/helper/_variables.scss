@@ -15,7 +15,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #3F5D45 !default;
 
 $grays: () !default;
 $grays: map-merge(
@@ -64,14 +64,15 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       #3F5D45 !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          #8DA291 !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #EAF0ED !default;
 $dark:          $gray-800 !default;
+$egg:            #FFE180 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -83,7 +84,8 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "egg":        $egg
   ),
   $theme-colors
 );
@@ -137,12 +139,22 @@ $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge(
   (
+    // 0: 0,
+    // 1: ($spacer * .25),
+    // 2: ($spacer * .5),
+    // 3: $spacer,
+    // 4: ($spacer * 1.5),
+    // 5: ($spacer * 3)
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: 5px,
+    2: 10px,
+    3: 15px,
+    4: 20px,
+    5: 30px,
+    6: 60px,
+    7: 70px,
+    8: 80px,
+    9: 105px
   ),
   $spacers
 );
@@ -309,11 +321,19 @@ $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
 $display3-size:               4.5rem !default;
 $display4-size:               3.5rem !default;
+$display5-size:               3.0rem !default;
+$display6-size:               2.5rem !default;
+$display7-size:               2.0rem !default;
+$display8-size:               1.5rem !default;
 
 $display1-weight:             300 !default;
 $display2-weight:             300 !default;
 $display3-weight:             300 !default;
 $display4-weight:             300 !default;
+$display5-weight:             300 !default;
+$display6-weight:             300 !default;
+$display7-weight:             300 !default;
+$display8-weight:             300 !default;
 $display-line-height:         $headings-line-height !default;
 
 $lead-font-size:              $font-size-base * 1.25 !default;

@@ -21,17 +21,18 @@
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">
-        <img src="../img/logo-all-dark.svg" height="48" alt="">
+      <a class="navbar-brand" href="./index.html">
+        <img class="d-none d-md-block" src="../img/logo-all-dark.svg" height="48" alt="">
+        <img class="d-block d-md-none" src="../img/logotype-sm-dark.svg" height="18" alt="">
       </a>
-      <a href="#" class="d-flex order-md-1">
+      <a href="./cart.html" class="d-flex order-md-1 text-decoration-none">
         <i class="fas fa-shopping-cart fa-2x"></i>
       </a>
       <div class="collapse navbar-collapse mr-md-4" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-link py-md-3 px-md-4 active" href="#">首頁 <span class="sr-only">(current)</span></a>
-          <a class="nav-link py-md-3 px-md-4 " href="#">甜點</a>
-          <a class="nav-link py-md-3 px-md-4 " href="#">登入</a>
+          <a class="nav-link py-md-3 px-md-4 active" href="./index.html">首頁 <span class="sr-only">(current)</span></a>
+          <a class="nav-link py-md-3 px-md-4 " href="./product.html">甜點</a>
+          <a class="nav-link py-md-3 px-md-4 " href="./login.html">登入</a>
         </div>
       </div>
     </div>
@@ -145,7 +146,7 @@
                 <span class="h5 font-weight-bold">NT$ 450</span>
               </div>
             </div>
-            <a href="" class="btn btn-light btn-block btn-lg rounded-0">
+            <a href="./cart.html" class="btn btn-light btn-block btn-lg rounded-0">
               <span class="font-weight-bold text-primary">加入購物車</span>
             </a>
           </div>
@@ -167,7 +168,7 @@
                 <span class="h5 font-weight-bold">NT$ 450</span>
               </div>
             </div>
-            <a href="" class="btn btn-light btn-block btn-lg rounded-0">
+            <a href="./cart.html" class="btn btn-light btn-block btn-lg rounded-0">
               <span class="font-weight-bold text-primary">加入購物車</span>
             </a>
           </div>
@@ -189,7 +190,7 @@
                 <span class="h5 font-weight-bold">NT$ 450</span>
               </div>
             </div>
-            <a href="" class="btn btn-light btn-block btn-lg rounded-0">
+            <a href="./cart.html" class="btn btn-light btn-block btn-lg rounded-0">
               <span class="font-weight-bold text-primary">加入購物車</span>
             </a>
           </div>
@@ -206,16 +207,14 @@
           <img src="../img/logo-light.svg" width="40" alt="">
           <span class="h4 text-light pl-4">訂閱你我的甜蜜郵件</span>
         </div>
-        <div class="col-md-5  d-flex justify-content-md-between justify-content-center p-0 mt-2 mt-md-0">
-          <div class="d-flex email-block">
-            <div class="d-flex justify-content-center align-items-center p-3">
-              <i class="fas fa-envelope fa-lg"></i>
-            </div>
-            <input type="text" class="form-control-lg subscription-input" placeholder="mail@email.com">
-            <a href="" class="btn btn-egg btn-lg">
-              <i class="fas fa-arrow-right"></i>
-            </a>
+        <div class="col-md-5 email-block d-flex justify-content-md-between justify-content-center p-0 mt-2 mt-md-0">
+          <div class="d-flex justify-content-center align-items-center p-3 text-primary">
+            <i class="fas fa-envelope fa-lg"></i>
           </div>
+          <input type="text" class="form-control w-100 subscription-input py-5" placeholder="mail@email.com">
+          <a href="" class="btn btn-egg btn-lg rounded-0 d-flex justify-content-center align-items-center">
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </div>

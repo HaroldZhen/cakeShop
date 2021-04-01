@@ -28,12 +28,33 @@ $color-hex-bold: #8DA291;
 .writing-vertical{
     writing-mode: vertical-rl;
 }
+.form-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    &:focus{
+        box-shadow: 0 0 0 0;
+    }
+}
+.next-btn{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $color-hex;
+    letter-spacing: 10px;
+}
 
 //custom
 .header{
     .banner{
+        position: relative;
         height: 496px;
         z-index: 1;
+        .banner-title{
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
     }
     .header-pic{
         color: #FFF;
@@ -127,11 +148,179 @@ $color-hex-bold: #8DA291;
 }
 .email-block{
     background-color: $color-hex-light;
+    .subscription-input{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        &:focus{
+            box-shadow: 0 0 0 0;
+        }
+    }
 }
-.subscription-input{
-    background-color: transparent;
-    border: none;
-    outline: none;
+
+.menu{
+    .menu-list{
+        font-size: 1.4rem;
+        font-weight: 500;
+        .menu-title{
+            color: $color-hex-light;
+        }
+        .menu-item{
+            color: $color-hex;
+            &.active{
+                background-color: $color-hex-light;
+                border: 1px solid $color-hex-light;
+            }
+        }
+    }
+}
+.login{
+    .login-input{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        &:focus{
+            box-shadow: 0 0 0 0;
+        }
+    }
+}
+.social{
+    .social-title{
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+    .social-item{
+        text-align: center;
+        background-color: #FFFFFF;
+        border: 1px solid transparent;
+        &:hover{
+            color: #FFFFFF;
+            border: 1px solid $color-hex-bold;
+        }
+    }
+    .social-item,.google{
+        border: 1px solid $color-hex-light;
+    }
+}
+
+.order-intor{
+    color: $color-hex-bold;
+    border: 1px solid $color-hex-light;
+    .order-intor-title{
+        background-color: $color-hex-light;
+        text-align: center;
+    }
+    .order-intor-footer{
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+    .order-item{
+        .order-image{
+            width: 120px;
+            height: 80px;
+            background-position: center center;
+            background-size: cover;
+        }
+        .order-productname{
+            font-weight: 300;
+        }
+        .order-price{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+}
+.checkout-form{
+    background-color: $color-hex;
+    color: $color-hex-light;
+}
+.checkout-form-process-wrap{
+    position: relative;
+    z-index: 2;
+    &::after{
+        content: '';
+        position: absolute;
+        top:30px;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px solid $color-hex-light;
+        top: 50%; 
+        z-index: -1;
+    }
+}
+.success-form-process-wrap{
+    position: relative;
+    z-index: 2;
+    &::after{
+        content: '';
+        position: absolute;
+        top:30px;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px solid $color-hex;
+        top: 50%; 
+        z-index: -1;
+    }
+    .success-form-item{
+        background-color: $color-hex-light;
+        border-radius: 50%;
+    }
+}
+.invoice{
+    .invoice-btn{
+        font-size: 1.6rem;
+        border-radius: 0;
+        background-color: $color-hex;
+        color: $color-hex-light;
+        border: 1px solid $color-hex-light;
+        &.active{
+            background-color: $color-hex-light;
+            color: $color-hex;
+        }
+    }
+}
+.success-page{
+    height: 460px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.order-info{
+    color: $color-hex-light;
+    .order-info-wrap{
+        background-color: $color-hex;
+    }
+    .order-info-block{
+        border-bottom: 1px solid $color-hex-light;
+    }
+    .order-info-title{
+        background-color: $color-hex-light;
+        text-align: center;
+    }
+    .order-info-footer{
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+}
+
+.cart{
+    border-bottom: 1px solid $color-hex-light;
+    .cart-image{
+        height: 110px;
+        min-width: 110px;
+    }
+    .cart-input-number{
+        width: 50px;
+        border-radius: 0;
+        border-top: 1px solid $color-hex-bold;
+        border-bottom: 1px solid $color-hex-bold;
+        border-left: 0;
+        border-right: 0;
+        padding: 0;
+        padding-left: 2px;
+        outline: 0;
+        text-align: center;
+    }
 }
 
 
@@ -143,5 +332,29 @@ $color-hex-bold: #8DA291;
     .section-break-block{
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+    .cart-item-daily.writing-vertical{
+        writing-mode: vertical-rl;
+    }
+    .order-info{
+        color: $color-hex;
+        .order-info-wrap{
+            background-color: #ffffff;
+        }
+        .order-info-block{
+            border-bottom: 0;
+            background-color: $color-hex-light;
+        }
+        .order-info-title{
+            background-color: $color-hex;
+            text-align: center;
+        }
+    }
+    .cart{
+        border-bottom: 0;
+        .cart-footer{
+            border-top: 1px solid $color-hex-light;
+            border-bottom: 1px solid $color-hex-light;
+        }
     }
 }

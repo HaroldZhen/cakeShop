@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>甜點工坊 - 付款</title>
+  <title>甜點工坊 - 電子發票</title>
   <!-- build:prod_css -->
   <!-- endbuild -->
 
@@ -22,8 +22,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="./index.html">
-        <img class="d-none d-md-block" src="../img/logo-all-dark.svg" height="48" alt="">
-        <img class="d-block d-md-none" src="../img/logotype-sm-dark.svg" height="18" alt="">
+        <img class="d-none d-md-block" src="./img/logo-all-dark.svg" height="48" alt="">
+        <img class="d-block d-md-none" src="./img/logotype-sm-dark.svg" height="18" alt="">
       </a>
       <a href="./cart.html" class="d-flex order-md-1 text-decoration-none">
         <i class="fas fa-shopping-cart fa-2x"></i>
@@ -32,7 +32,7 @@
         <div class="navbar-nav ml-auto">
           <a class="nav-link py-md-3 px-md-4 " href="./index.html">首頁</a>
           <a class="nav-link py-md-3 px-md-4 " href="./product.html">甜點</a>
-          <a class="nav-link py-md-3 px-md-4 " href="./login.html">登入</a>
+          <a class="nav-link py-md-3 px-md-4" href="./login.html">登入</a>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
   <section class="container">
     <div class="row">
       <div class="col-md-8 px-0 px-md-3">
-        <div class=" checkout-form p-5">
+        <div class="checkout-form p-5">
           <div class="row mb-4">
             <div class="col-6">
               <h2>發票</h2>
@@ -49,62 +49,31 @@
             <div class="col-6 py-md-3 d-flex align-items-center">
               <div class="checkout-form-process-wrap w-100 d-flex justify-content-between align-items-center">
                 <i class="bg-primary fas fa-check-circle fa-lg"></i>
+                <i class="bg-primary fas fa-check-circle fa-lg"></i>
                 <i class="bg-primary fas fa-circle fa-lg"></i>
-                <i class="bg-primary far fa-circle fa-lg"></i>
               </div>
+            </div>
+          </div>
+          <div class="row invoice no-gutters mb-5">
+            <div class="col-6">
+              <a href="./checkout3-1.html" class="btn btn-block invoice-btn active">電子發票</a>
+            </div>
+            <div class="col-6">
+              <a href="./checkout3-2.html" class="btn  btn-block invoice-btn">郵寄發票</a>
             </div>
           </div>
           <div class="form-group">
-            <label for="tel" class="h4">信用卡卡號</label>
-            <div class="d-flex bg-light">
-              <input type="cardnumber" class="form-control form-input bg-light py-5" id="cardnumber" placeholder="1234-xxxx-xxxx-1234" aria-describedby="cardnumber">
-              <div class="d-flex p-4 text-primary">
-                <i class="far fa-credit-card fa-lg"></i>
-              </div>
-            </div>
+            <label for="email" class="h4">電子郵件信箱</label>
+            <input type="email" class="form-control form-input bg-light py-5" id="email" placeholder="mail@email.com"
+              aria-describedby="email">
           </div>
-          <div>
-            <h4>持卡人姓名</h4>
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <input type="text" class="form-control form-input bg-light py-5" id="lastname" placeholder="王" aria-describedby="lastname">
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <input type="text" class="form-control form-input bg-light py-5" id="firstname" placeholder="小明" aria-describedby="firstname">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h4>有效期限</h4>
-            <div class="row">
-              <div class="col-6">
-                <select class="form-control form-control-lg form-input bg-light">
-                  <option>月</option>
-                </select>
-              </div>
-              <div class="col-6">
-                <select class="form-control form-control-lg form-input bg-light">
-                  <option>年</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class=" mt-4 mb-0">
-            <h4>背面末三碼</h4>
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <input type="text" class="form-control form-input bg-light py-5" id="cvc" placeholder="123" aria-describedby="cvc">
-                </div>
-              </div>
-            </div>
+          <div class="form-group">
+            <label for="vat" class="h4">統一編號（選填）</label>
+            <input type="number" class="form-control form-input bg-light py-5" id="vat" placeholder="12345678"
+              aria-describedby="vat">
           </div>
         </div>
-        <a href="./checkout3-1.html"class="btn btn-egg btn-lg btn-block rounded-0 py-3 h4 m-0 next-btn">下一步</a>
+        <a href="./checkout-success.html" class="btn btn-egg btn-lg btn-block rounded-0 py-3 h4 m-0 next-btn">確認結帳</a>
       </div>
       <div class="col-md-4 d-none d-md-block">
         <div class="order-intor mb-md-4">
@@ -128,7 +97,8 @@
           <h3 class="order-intor-title py-md-3 mb-md-0">購物清單</h3>
           <div class="px-md-4 py-md-2">
             <div class="order-item d-flex">
-              <div class="order-image mr-md-3" style="background-image: url(../img/photo-1504855328839-2f4baf9e0fd7.jpeg);">
+              <div class="order-image mr-md-3"
+                style="background-image: url(./img/photo-1504855328839-2f4baf9e0fd7.jpeg);">
               </div>
               <div class="order-text d-flex flex-column justify-content-center align-items-start">
                 <p class="order-productname m-0">焦糖馬卡龍（2）</p>
@@ -138,7 +108,8 @@
           </div>
           <div class="px-md-4 py-md-2">
             <div class="order-item d-flex">
-              <div class="order-image mr-md-3" style="background-image: url(../img/photo-1501432781167-c0ccfd492297.jpeg);">
+              <div class="order-image mr-md-3"
+                style="background-image: url(./img/photo-1501432781167-c0ccfd492297.jpeg);">
               </div>
               <div class="order-text d-flex flex-column justify-content-center align-items-start">
                 <p class="order-productname m-0">焦糖馬卡龍（2）</p>
@@ -148,7 +119,8 @@
           </div>
           <div class="px-md-4 py-md-2">
             <div class="order-item d-flex">
-              <div class="order-image mr-md-3" style="background-image: url(../img/photo-1504473089979-b1c4993a9653.jpeg);">
+              <div class="order-image mr-md-3"
+                style="background-image: url(./img/photo-1504473089979-b1c4993a9653.jpeg);">
               </div>
               <div class="order-text d-flex flex-column justify-content-center align-items-start">
                 <p class="order-productname m-0">焦糖馬卡龍（2）</p>
@@ -165,7 +137,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-5 d-flex justify-content-center align-items-md-end align-items-center">
-          <img src="../img/logo-light.svg" width="40" alt="">
+          <img src="./img/logo-light.svg" width="40" alt="">
           <span class="h4 text-light pl-4">訂閱你我的甜蜜郵件</span>
         </div>
         <div class="col-md-5 email-block d-flex justify-content-md-between justify-content-center p-0 mt-2 mt-md-0">
@@ -185,7 +157,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5 d-flex flex-column justify-content-between align-items-start">
-          <img class="m-md-2" src="../img/logotype-sm-dark.svg" height="27" alt="">
+          <img class="m-md-2" src="./img/logotype-sm-dark.svg" height="27" alt="">
           <ul class="list-unstyled text-primary my-3 m-md-0 ">
             <li>07-1234-5678</li>
             <li>sweetaste@email.com</li>
@@ -193,14 +165,14 @@
           </ul>
         </div>
         <div class="col-md-5 d-flex justify-content-end">
-          <img class="d-none d-md-block" src="../img/sm-今天是個吃甜點的好日子.svg" width="60" alt="">
+          <img class="d-none d-md-block" src="./img/sm-今天是個吃甜點的好日子.svg" width="60" alt="">
         </div>
       </div>
       <div class="row mt-3">
         <div class="col-md-5">
           <div>
-            <img src="../img/ic-line@.svg" width="32" height="32" alt="">
-            <img src="../img/ic-facebook.svg" width="32" height="32" alt="">
+            <img src="./img/ic-line@.svg" width="32" height="32" alt="">
+            <img src="./img/ic-facebook.svg" width="32" height="32" alt="">
           </div>
         </div>
         <div class="col-md-5 d-flex justify-content-start justify-content-md-end text-primary my-2 my-md-0">

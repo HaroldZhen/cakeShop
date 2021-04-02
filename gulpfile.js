@@ -22,7 +22,7 @@ let options = minimist(process.argv.slice(2), envOptions);
 
 
 gulp.task('copyHTML', () => {
-    return gulp.src('./source/view/*.html')
+    return gulp.src('./source/*.html')
         .pipe(
             htmlreplace({
                 dev_css: '', // 針對 dev_css 塊做替換

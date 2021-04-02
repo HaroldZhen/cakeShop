@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>甜點工坊 - 首頁</title>
+  <!-- build:prod_css -->
+  <!-- endbuild -->
+
+  <!-- build:dev_css -->
+  <link rel="stylesheet" href="../../public/css/all.css" />
+  <!-- endbuild -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-white my-3">
+    <div class="container d-flex">
+      <button class="navbar-toggler border-0 " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">
+        <img class="d-none d-md-block" src="../img/logo-all-dark.svg" height="48" alt="">
+        <img class="d-block d-md-none" src="../img/logotype-sm-dark.svg" height="18" alt="">
+      </a>
+      <a href="./cart.html" class="d-flex order-md-1 text-decoration-none">
+        <i class="fas fa-shopping-cart fa-2x"></i>
+      </a>
+      <div class="collapse navbar-collapse mr-md-4" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link py-md-3 px-md-4 " href="./index.html">首頁</a>
+          <a class="nav-link py-md-3 px-md-4 " href="./product.html">甜點</a>
+          <a class="nav-link py-md-3 px-md-4 active" href="./login.html">登入<span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="container px-0 px-md-3">
+    <div class="row justify-content-center">
+      <div class="col-md-10 px-0">
+        <div class="px-4 py-2 bg-primary login d-block d-md-none">
+          <h2 class="text-light text-center my-5">會員登入</h2>
+        </div>
+        <div class="row no-gutters d-flex flex-md-row-reverse">
+          <div class="col-md-6 py-md-4 social">
+            <div class="bg-light py-4 px-md-6">
+              <p class="text-center text-primary pt-md-2 mb-md-1 social-title d-none d-md-block">—— 連結社群帳號 ——</p>
+              <div class="row d-flex flex-md-column justify-content-center">
+                <div class="col-3 col-md-12 social-item p-3 p-md-3 my-md-2 d-flex align-items-center justify-content-center">
+                  <img src="../img/ic-facebook-logotype.svg" height="25px" alt="">
+                </div>
+                <div class="col-3 col-md-12 social-item google p-3 p-md-3 my-md-2 d-flex align-items-center justify-content-center">
+                  <img src="../img/ic-google.svg" height="35px" alt="">
+                </div>
+                <div class="col-3 col-md-12 social-item p-3 p-md-3 my-md-2 d-flex align-items-center justify-content-center">
+                  <img src="../img/ic-yahoo.svg" height="30px" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="px-4 py-5 bg-primary login">
+              <h2 class="text-light text-center my-4 d-none d-md-block">會員登入</h2>
+              <div class="form-group bg-light d-flex">
+                <div class="d-flex justify-content-center align-items-center p-2">
+                  <i class="fas fa-envelope fa-lg text-primary"></i>
+                </div>
+                <input type="email" class="form-control login-input py-5" id="exampleInputEmail1" placeholder="電子信箱/手機號碼" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group  bg-light d-flex">
+                <div class="d-flex justify-content-center align-items-center p-2">
+                  <i class="fas fa-key fa-lg text-primary"></i>
+                </div>
+                <input type="password" class="form-control login-input py-5" placeholder="請輸入使用者密碼" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="remember-me">
+                <label class="form-check-label text-light" for="remember-me">記住我</label>
+              </div>
+            </div>
+            <a href="" class="btn bg-egg text-primary btn-block btn-lg rounded-0 border-0 py-3">登入帳號</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-primary mt-3 mt-md-7">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 d-flex justify-content-center align-items-md-end align-items-center">
+          <img src="../img/logo-light.svg" width="40" alt="">
+          <span class="h4 text-light pl-4">訂閱你我的甜蜜郵件</span>
+        </div>
+        <div class="col-md-5 email-block d-flex justify-content-md-between justify-content-center p-0 mt-2 mt-md-0">
+          <div class="d-flex justify-content-center align-items-center p-3 text-primary">
+            <i class="fas fa-envelope fa-lg"></i>
+          </div>
+          <input type="text" class="form-control w-100 subscription-input py-5" placeholder="mail@email.com">
+          <a href="" class="btn btn-egg btn-lg rounded-0 d-flex justify-content-center align-items-center">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 d-flex flex-column justify-content-between align-items-start">
+          <img class="m-md-2" src="../img/logotype-sm-dark.svg" height="27" alt="">
+          <ul class="list-unstyled text-primary my-3 m-md-0 ">
+            <li>07-1234-5678</li>
+            <li>sweetaste@email.com</li>
+            <li>800 高雄市新興區幸福路 520 號</li>
+          </ul>
+        </div>
+        <div class="col-md-5 d-flex justify-content-end">
+          <img class="d-none d-md-block" src="../img/sm-今天是個吃甜點的好日子.svg" width="60" alt="">
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-5">
+          <div>
+            <img src="../img/ic-line@.svg" width="32" height="32" alt="">
+            <img src="../img/ic-facebook.svg" width="32" height="32" alt="">
+          </div>
+        </div>
+        <div class="col-md-5 d-flex justify-content-start justify-content-md-end text-primary my-2 my-md-0">
+          <span>© 2018 Sweetaste* All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- build:dev_js -->
+  <script src="./js/vendor.js"></script>
+  <!-- endbuild -->
+  <!-- build:prod_js -->
+  <!-- endbuild -->
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/963fe90d28.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
